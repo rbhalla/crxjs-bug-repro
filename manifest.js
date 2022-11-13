@@ -5,4 +5,10 @@ export default {
   action: {
     default_popup: "index.html",
   },
+  content_scripts: [
+    {
+      matches: ["https://github.com/crxjs/chrome-extension-tools/issues/577"],
+      js: ["index.js"],
+    },
+  ],
 };
