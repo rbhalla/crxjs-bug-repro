@@ -5,4 +5,11 @@ export default {
   action: {
     default_popup: "index.html",
   },
+  web_accessible_resources: [
+    {
+      resources: ["src/pages/options/index.html", "src/pages/options/index.js"],
+      matches: ["*://*/*"],
+    },
+  ],
+  options_page: "src/pages/options/index.html",
 };
