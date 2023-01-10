@@ -5,4 +5,10 @@ export default {
   action: {
     default_popup: "index.html",
   },
+  content_scripts: [
+    {
+      matches: ["*://*/*"],
+      js: ["src/main.tsx"],
+    },
+  ],
 };
